@@ -86,15 +86,15 @@ export default function Post({
     post.first_publication_date !== post.last_publication_date;
 
   let editionDate;
-  // if (isPostEdited) {
-  //   editionDate = format(
-  //     new Date(post.last_publication_date),
-  //     "'* editado em' dd MMM yyyy', às' H':'m",
-  //     {
-  //       locale: ptBR,
-  //     }
-  //   );
-  // }
+  if (isPostEdited) {
+    editionDate = format(
+      new Date(post.last_publication_date),
+      "'* editado em' dd MMM yyyy', às' H':'m",
+      {
+        locale: ptBR,
+      }
+    );
+  }
 
   return (
     <>
