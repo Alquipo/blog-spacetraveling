@@ -77,7 +77,7 @@
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
-        "allowExpressions": false
+        "allowExpressions": true
       }
     ],
     "@typescript-eslint/camelcase": "off"
